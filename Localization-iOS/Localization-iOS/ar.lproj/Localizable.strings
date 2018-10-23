@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Localization-iOS
+
+  Created by Aman Aggarwal on 05/09/18.
+  Copyright © 2018 Aman Aggarwal. All rights reserved.
+*/
+"header_text" = "التوطين في دائرة الرقابة الداخلية";
+"language_text" = "اللغة العربية";
+"button_text" = "غير اللغة";
+"btn_back" = "الى الخلف";
+"btn_english" = "English";
+"btn_arabic" = "عربى";
+"select_language" = "اختار اللغة";
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XE6-uT-wvM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jC4-aM-xhz">
+            <objects>
+                <navigationController storyboardIdentifier="rootnav" navigationBarHidden="YES" id="XE6-uT-wvM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PvD-oK-CQR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="02d-VQ-aiC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nip-3G-FDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1245" y="160"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Localization_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localization in iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6v-yT-G7q">
+                                <rect key="frame" x="10" y="120" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-aj-glU">
+                                <rect key="frame" x="10" y="171" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-xI-c6I">
+                                <rect key="frame" x="220" y="246" width="145" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Change Language">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToLanguageVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mE-RH-0kW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.55178755589999995" blue="0.64722087039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A6v-yT-G7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6Iz-ds-1bj"/>
+                            <constraint firstItem="dk9-xI-c6I" firstAttribute="top" secondItem="Gc2-aj-glU" secondAttribute="bottom" constant="54" id="XJK-B9-bKE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dk9-xI-c6I" secondAttribute="trailing" constant="10" id="ZKV-Th-CTw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gc2-aj-glU" secondAttribute="trailing" constant="10" id="ZYv-pB-rZO"/>
+                            <constraint firstItem="A6v-yT-G7q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dgm-0q-kMv"/>
+                            <constraint firstItem="Gc2-aj-glU" firstAttribute="top" secondItem="A6v-yT-G7q" secondAttribute="bottom" constant="30" id="eRq-xR-iLV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6v-yT-G7q" secondAttribute="trailing" constant="10" id="kQC-sv-Hww"/>
+                            <constraint firstItem="Gc2-aj-glU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sjt-Nf-dqP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="23c-vw-OAx"/>
+                    <connections>
+                        <outlet property="btnCHangeLanguage" destination="dk9-xI-c6I" id="0BO-zE-iho"/>
+                        <outlet property="lblHeader" destination="A6v-yT-G7q" id="jN0-eP-HX3"/>
+                        <outlet property="lblLanguage" destination="Gc2-aj-glU" id="WE4-H6-lKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="77"/>
+        </scene>
+        <!--LangageVC View Controller-->
+        <scene sceneID="c6t-wN-AOq">
+            <objects>
+                <viewController storyboardIdentifier="LangageVCViewController" id="9O9-Tx-3fu" customClass="LangageVCViewController" customModule="Localization_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Na3-Ur-Xr3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve3-6P-hL3">
+                                <rect key="frame" x="20" y="50" width="40" height="40"/>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="navigateBack:" destination="9O9-Tx-3fu" eventType="touchUpInside" id="qhx-Ka-6o1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-VY-src">
+                                <rect key="frame" x="20" y="183" width="56" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAppLanguageEnglish:" destination="9O9-Tx-3fu" eventType="touchUpInside" id="tAM-AK-v8A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF2-1j-EMI">
+                                <rect key="frame" x="20" y="112" width="128.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojI-g9-opl">
+                                <rect key="frame" x="20" y="226" width="50" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Arabic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAppLanguageArabic:" destination="9O9-Tx-3fu" eventType="touchUpInside" id="PjL-1d-T31"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.55178755589999995" blue="0.64722087039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BTB-VY-src" firstAttribute="top" secondItem="PF2-1j-EMI" secondAttribute="bottom" constant="50" id="2Mj-qw-AEo"/>
+                            <constraint firstItem="ojI-g9-opl" firstAttribute="top" secondItem="BTB-VY-src" secondAttribute="bottom" constant="10" id="8KH-RU-sbI"/>
+                            <constraint firstItem="BTB-VY-src" firstAttribute="leading" secondItem="JhK-NP-E8G" secondAttribute="leading" constant="20" id="RIo-aq-M6A"/>
+                            <constraint firstItem="PF2-1j-EMI" firstAttribute="leading" secondItem="JhK-NP-E8G" secondAttribute="leading" constant="20" id="UQI-X2-8du"/>
+                            <constraint firstItem="PF2-1j-EMI" firstAttribute="top" secondItem="ve3-6P-hL3" secondAttribute="bottom" constant="22" id="erJ-YY-hvY"/>
+                            <constraint firstItem="ve3-6P-hL3" firstAttribute="leading" secondItem="JhK-NP-E8G" secondAttribute="leading" constant="20" id="f6F-td-19o"/>
+                            <constraint firstItem="ojI-g9-opl" firstAttribute="leading" secondItem="JhK-NP-E8G" secondAttribute="leading" constant="20" id="lh8-kl-DfW"/>
+                            <constraint firstItem="ve3-6P-hL3" firstAttribute="top" secondItem="JhK-NP-E8G" secondAttribute="top" constant="30" id="mCf-l2-7wt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JhK-NP-E8G"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnArabic" destination="ojI-g9-opl" id="gmE-IG-J9l"/>
+                        <outlet property="btnBack" destination="ve3-6P-hL3" id="KZk-Z9-ULO"/>
+                        <outlet property="btnEnglish" destination="BTB-VY-src" id="yy5-pl-qdf"/>
+                        <outlet property="lblSelectLanguage" destination="PF2-1j-EMI" id="46a-7J-dgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb9-Dj-nLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Localization-iOS
+
+  Created by Aman Aggarwal on 05/09/18.
+  Copyright © 2018 Aman Aggarwal. All rights reserved.
+*/
+"header_text" = "Localization in iOS";
+"language_text" = "English Language";
+"button_text" = "Change Language";
+"btn_back" = "Back";
+"btn_english" = "English";
+"btn_arabic" = "Arabic";
+"select_language" = "Select language";
